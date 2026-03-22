@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Street 1 Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="web.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+
+    <a class="logo" href="#">
+      <span class="logo-main">Street 1 Cafe</span>
+      <span class="logo-sub">Est. 2018 · Islamabad</span>
+    </a>
+
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+
+        <li class="has-dropdown">
+          <a href="#">Options <span class="chevron">▾</span></a>
+          <ul class="dropdown">
+            <li><a href="#"><span class="dropdown-icon">☕</span> Our Story</a></li>
+            <li><a href="#"><span class="dropdown-icon">📍</span> Find Us</a></li>
+            <li><a href="#"><span class="dropdown-icon">🎁</span> Gift Cards</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a href="#"><span class="dropdown-icon">💼</span> Careers</a></li>
+            <li><a href="#"><span class="dropdown-icon">📸</span> Gallery</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="btn-nav-reserve">Reserve a Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-links">
+      <li><a href="#hero">Home <span class="m-arrow">→</span></a></li>
+      <li><a href="#menu">Menu <span class="m-arrow">→</span></a></li>
+      <li><a href="#about">About <span class="m-arrow">→</span></a></li>
+      <li class="has-mobile-sub">
+        <a href="#" class="has-sub-toggle">
+          Options <span class="mobile-toggle-icon">▾</span>
+        </a>
+        <ul class="mobile-sub">
+          <li><a href="#">☕ Our Story</a></li>
+          <li><a href="#">📍 Find Us</a></li>
+          <li><a href="#">🎁 Gift Cards</a></li>
+          <li><a href="#">💼 Careers</a></li>
+          <li><a href="#">📸 Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact <span class="m-arrow">→</span></a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="#" class="btn-nav-reserve">Reserve a Table</a>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+
+      <p class="hero-eyebrow">Coffee &middot; Community &middot; Culture</p>
+
+      <h1 class="hero-title">
+        Where Every Cup<br>Tells <em>a Story.</em>
+      </h1>
+
+      <div class="hero-rule"></div>
+
+      <p class="hero-sub">
+        A warm corner on the street &mdash; handcrafted brews,<br>
+        slow mornings, and good conversation.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#menu" class="btn-filled">View Menu</a>
+        <a href="#" class="btn-outline">Reserve a Table</a>
+      </div>
+
+    </div>
+
+    <!-- Scroll Arrow -->
+    <div class="scroll-arrow">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       MENU SECTION
+  ════════════════════════════════════ -->
+  <section class="menu-section" id="menu">
+
+    <div class="section-header">
+      <p class="section-eyebrow reveal">Crafted with care</p>
+      <h2 class="section-title reveal">Our Menu</h2>
+      <div class="section-rule reveal">
+        <span class="section-rule-dot"></span>
+      </div>
+    </div>
+
+    <div class="menu-grid">
+
+      <!-- Card 1 -->
+      <div class="menu-card">
+        <p class="card-category">Hot Drinks</p>
+        <h3 class="card-name">Espresso</h3>
+        <p class="card-desc">A bold, concentrated shot pulled from single-origin beans — rich crema, dark chocolate finish.</p>
+        <div class="card-footer">
+          <span class="card-price">PKR 350</span>
+          <span class="card-tag">Signature</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="menu-card">
+        <p class="card-category">Hot Drinks</p>
+        <h3 class="card-name">Cappuccino</h3>
+        <p class="card-desc">Velvety steamed milk layered over double espresso — the perfect balance of bold and creamy.</p>
+        <div class="card-footer">
+          <span class="card-price">PKR 480</span>
+          <span class="card-tag">Classic</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="menu-card">
+        <p class="card-category">Cold Drinks</p>
+        <h3 class="card-name">Cold Brew</h3>
+        <p class="card-desc">Steeped for 18 hours in cold water — smooth, low-acid, naturally sweet with a long finish.</p>
+        <div class="card-footer">
+          <span class="card-price">PKR 550</span>
+          <span class="card-tag">Slow Brew</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="menu-card">
+        <p class="card-category">Bakery</p>
+        <h3 class="card-name">Croissant</h3>
+        <p class="card-desc">Hand-laminated, baked fresh every morning — shatteringly crisp outside, cloud-soft within.</p>
+        <div class="card-footer">
+          <span class="card-price">PKR 420</span>
+          <span class="card-tag">Fresh Daily</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="menu-card">
+        <p class="card-category">All-Day Bites</p>
+        <h3 class="card-name">Avocado Toast</h3>
+        <p class="card-desc">Smashed avo on sourdough, topped with chilli flakes, lemon zest, and a drizzle of olive oil.</p>
+        <div class="card-footer">
+          <span class="card-price">PKR 720</span>
+          <span class="card-tag">Chef's Pick</span>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="menu-card">
+        <p class="card-category">Desserts</p>
+        <h3 class="card-name">Tiramisu</h3>
+        <p class="card-desc">Classic Italian layers of espresso-soaked savoiardi and mascarpone cream, dusted with cocoa.</p>
+        <div class="card-footer">
+          <span class="card-price">PKR 650</span>
+          <span class="card-tag">House Made</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════════ -->
+  <section class="about-section" id="about">
+
+    <div class="section-header">
+      <p class="section-eyebrow reveal">Our Story</p>
+      <h2 class="section-title reveal">More Than Just Coffee</h2>
+      <div class="section-rule reveal">
+        <span class="section-rule-dot"></span>
+      </div>
+    </div>
+
+    <div class="about-grid">
+
+      <!-- Left: Quote -->
+      <div class="about-left">
+        <div class="about-quote-line"></div>
+        <blockquote class="about-quote">
+          "Every cup is a moment worth savoring."
+        </blockquote>
+        <p class="about-quote-author">— Street 1 Cafe</p>
+      </div>
+
+      <!-- Right: Story -->
+      <div class="about-right">
+        <p class="about-body">
+          Tucked into the heart of Islamabad, Street 1 Cafe was born from a simple idea — that a great cup of coffee deserves an equally great space. Since 2018, we've been crafting drinks with care, sourcing single-origin beans, and building a corner of the city where people actually want to stay a while.
+        </p>
+        <p class="about-body">
+          We're not just a cafe. We're a community space — for early risers, late workers, first dates, and old friends. Every detail, from the warm lighting to the handwritten menu, is designed to make you feel at home on Street 1.
+        </p>
+        <a href="#" class="btn-learn-more">Learn More</a>
+      </div>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="about-stats">
+      <div class="stat-item">
+        <span class="stat-number" data-target="5" data-suffix="+">0</span>
+        <span class="stat-label">Years of Service</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="50" data-suffix="+">0</span>
+        <span class="stat-label">Menu Items</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="10000" data-suffix="+">0</span>
+        <span class="stat-label">Happy Customers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="2018" data-suffix="">0</span>
+        <span class="stat-label">Established</span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       GALLERY SECTION
+  ════════════════════════════════════ -->
+  <section class="gallery-section" id="gallery">
+
+    <div class="section-header">
+      <p class="section-eyebrow reveal">Moments</p>
+      <h2 class="section-title reveal">A Glimpse Inside</h2>
+      <div class="section-rule reveal">
+        <span class="section-rule-dot"></span>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+
+      <!-- Row 1: 3 equal boxes -->
+      <div class="g-box g-box--md gallery-item" >
+        <div class="g-box-zoom" style="background: linear-gradient(135deg, #3a2010 0%, #5a3020 100%)"></div>
+        <span class="g-label">The Bar</span>
+      </div>
+      <div class="g-box g-box--md gallery-item">
+        <div class="g-box-zoom" style="background: linear-gradient(135deg, #2e1a0c 0%, #4a2c18 100%)"></div>
+        <span class="g-label">Morning Light</span>
+      </div>
+      <div class="g-box g-box--md gallery-item">
+        <div class="g-box-zoom" style="background: linear-gradient(135deg, #3d2515 0%, #5c3825 100%)"></div>
+        <span class="g-label">Our Space</span>
+      </div>
+
+      <!-- Row 2: 1 tall left, 2 stacked right -->
+      <div class="g-box g-box--tall gallery-item">
+        <div class="g-box-zoom" style="background: linear-gradient(160deg, #271608 0%, #4a2e1a 100%)"></div>
+        <span class="g-label">Handcrafted</span>
+      </div>
+      <div class="g-box g-box--sm gallery-item">
+        <div class="g-box-zoom" style="background: linear-gradient(135deg, #352010 0%, #553020 100%)"></div>
+        <span class="g-label">The Corner</span>
+      </div>
+      <div class="g-box g-box--sm gallery-item">
+        <div class="g-box-zoom" style="background: linear-gradient(135deg, #2a1a0a 0%, #4e3018 100%)"></div>
+        <span class="g-label">Evening Vibes</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       TESTIMONIALS SECTION
+  ════════════════════════════════════ -->
+  <section class="testimonials-section" id="testimonials">
+
+    <div class="section-header">
+      <p class="section-eyebrow reveal">Kind Words</p>
+      <h2 class="section-title reveal">What Our Guests Say</h2>
+      <div class="section-rule reveal">
+        <span class="section-rule-dot"></span>
+      </div>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="t-card t-item">
+        <div class="t-stars">★★★★★</div>
+        <blockquote class="t-quote">
+          "The best coffee I've had in Islamabad. The atmosphere is unmatched."
+        </blockquote>
+        <div class="t-author">
+          <span class="t-name">Sarah K.</span>
+          <span class="t-location">F-7, Islamabad</span>
+        </div>
+      </div>
+
+      <div class="t-card t-item">
+        <div class="t-stars">★★★★★</div>
+        <blockquote class="t-quote">
+          "Street 1 feels like home. I come here every single morning."
+        </blockquote>
+        <div class="t-author">
+          <span class="t-name">Ahmed R.</span>
+          <span class="t-location">G-9, Islamabad</span>
+        </div>
+      </div>
+
+      <div class="t-card t-item">
+        <div class="t-stars">★★★★★</div>
+        <blockquote class="t-quote">
+          "Absolutely stunning space. The cold brew is life changing."
+        </blockquote>
+        <div class="t-author">
+          <span class="t-name">Maryam T.</span>
+          <span class="t-location">E-11, Islamabad</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact anchor placeholder removed — real section below -->
+
+
+  <!-- ═══════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+
+    <div class="section-header">
+      <p class="section-eyebrow reveal">Find Us</p>
+      <h2 class="section-title reveal">Come Say Hello</h2>
+      <div class="section-rule reveal">
+        <span class="section-rule-dot"></span>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="contact-info contact-reveal-left">
+
+        <div class="info-item">
+          <span class="info-icon">◎</span>
+          <div class="info-body">
+            <span class="info-label">Address</span>
+            <span class="info-value">Street 10, Islamabad, Pakistan</span>
+          </div>
+        </div>
+        <div class="info-divider"></div>
+
+        <div class="info-item">
+          <span class="info-icon">◷</span>
+          <div class="info-body">
+            <span class="info-label">Hours</span>
+            <span class="info-value">Mon – Sun · 8:00 AM – 12:00 AM</span>
+          </div>
+        </div>
+        <div class="info-divider"></div>
+
+        <div class="info-item">
+          <span class="info-icon">✆</span>
+          <div class="info-body">
+            <span class="info-label">Phone</span>
+            <span class="info-value">+92 51 2823431</span>
+          </div>
+        </div>
+        <div class="info-divider"></div>
+
+        <div class="info-item">
+          <span class="info-icon">✉</span>
+          <div class="info-body">
+            <span class="info-label">Email</span>
+            <span class="info-value">hello@street1cafe.pk</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap contact-reveal-right">
+        <form class="contact-form" id="contactForm"
+              action="https://formspree.io/f/xannojpp"
+              method="POST">
+
+          <input type="hidden" name="_subject" value="New message from Street 1 Cafe website" />
+
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-input" name="name" placeholder="e.g. Ahmed Khan" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-input form-textarea" name="message" placeholder="Tell us something..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+
+        </form>
+
+        <!-- Thank you message (hidden by default) -->
+        <div class="form-success" id="formSuccess">
+          <p class="form-success-text">Thank you! We'll get back to you soon.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer class="footer footer-reveal">
+
+    <div class="footer-grid">
+
+      <!-- Left: Logo + tagline -->
+      <div class="footer-brand">
+        <a class="logo" href="#hero">
+          <span class="logo-main">Street 1 Cafe</span>
+          <span class="logo-sub">Crafted with care · Islamabad</span>
+        </a>
+      </div>
+
+      <!-- Center: Nav -->
+      <nav class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Right: Socials -->
+      <div class="footer-socials">
+        <a href="#" class="social-icon" aria-label="Instagram">𝕀𝕘</a>
+        <a href="#" class="social-icon" aria-label="Facebook">𝔽𝕓</a>
+        <a href="#" class="social-icon" aria-label="TikTok">𝕋𝕜</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Street 1 Cafe. All rights reserved.</span>
+    </div>
+
+  </footer>
+
+
+  <script src="web.js"></script>
+</body>
+</html>
